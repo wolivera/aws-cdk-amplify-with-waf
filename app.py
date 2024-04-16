@@ -9,14 +9,14 @@ app = App()
 
 CustomWebAclStack(
     app,
-    "CustomWebAclStack",
+    "CustomWebAclStackDev", # change it to a different name in case you want to deploy to a different environment
     description="This stack creates WebACL to be attached to a CloudFront distribution \
         for a Web App hosted with Amplify",
     env={"region": "us-east-1"},
 )
 CustomAmplifyDistributionStack(
     app,
-    "CustomAmplifyDistributionStack",
+    "CustomAmplifyDistributionStackDev", # change it to a different name in case you want to deploy to a different environment
     description="This stack creates a custom CloudFront distribution pointing to \
         Amplify app's default CloudFront distribution. \
         It also enables Basic Auth protection on specified branch. \

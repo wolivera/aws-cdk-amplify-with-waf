@@ -21,8 +21,8 @@
     "@aws-cdk-containers/ecs-service-extensions:enableDefaultLogDriver": true,
     "@aws-cdk/aws-ec2:uniqueImdsv2TemplateName": true,
     "@aws-cdk/core:target-partitions": ["aws", "aws-cn"],
-    "web_acl_arn":"<<ARN FOR WEB ACL>>",
-    "app_id":"<<AMPLIFY APP ID>>",
-    "branch_name":"<<AMPLIFY BRANCH NAME>>"
+    "web_acl_arn":"arn:aws:wafv2:us-east-1:xyz:global/webacl/rWebACL-XYZ/ABC",
+    "app_id":"dkABC",
+    "branch_name":"dev"
   }
 }
